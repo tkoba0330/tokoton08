@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace tokoton08
+namespace tokoton08_02
 {
     class Program
     {
@@ -16,10 +16,11 @@ namespace tokoton08
 
         static void Main(string[] args)
         {
-            string name = "";
-            int age = 0;
+            // 初期化されない変数はref出来ない。（コンパイルエラーになる。）
+            string nam;
+            int age;
 
-            getNameAndAge(ref name,ref age);
+            getNameAndAge(ref name, ref age);
 
             Console.WriteLine($"Name={name}, Age={age}");
 
